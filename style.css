@@ -1,0 +1,128 @@
+header h3{
+	text-align: center;
+	font-family: 'Rubik Iso', cursive;
+	font-size: 3rem;
+	color: lightyellow;
+}
+.navbar{
+	background: rgba(0, 0, 0, 0.4);
+	padding: 5px;
+	text-align: center;
+	color: white;
+}
+.navbar h4{
+	margin-left: 10px;
+}
+#dropdown{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 10px;
+	text-align: center;
+	list-style-type: none;
+}
+li a{
+	text-decoration: none;	
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+li a:hover{
+	color: blue;
+}
+header{
+	background-image: linear-gradient(to right, gray,skyblue);
+	height: 35vh;
+}
+.background h2{
+	text-align: center;
+	padding-top:80px ;
+}
+.carousel-item img{
+	height: 40vh;
+}
+Section{
+	margin-top: 5px;
+}
+#card{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 15px;
+	margin: 5px;
+	background-color: whitesmoke;
+	padding: 10px;
+}
+.card img{
+	height: 200px;
+	margin-left:30% ;
+}
+Section h2{
+	text-align: center;
+}
+.icons i{
+	font-size: 30px;
+	color: whitesmoke;
+}
+.icons i:hover{
+	color: black;
+}
+.icons{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	text-align: center;
+}
+
+footer{
+	background-image: linear-gradient(to right, gray,skyblue);
+	color: white;
+	font-size: 1.2rem;
+	padding: 10px;
+}
+footer i{
+	margin-left: 10px;
+	padding: 5px;
+}
+
+
+@media screen and (max-width:450px){
+	header{
+		height:47vh;
+		text-align: center;
+	}
+	header h3{
+		font-size: 2rem;
+	}
+	#dropdown{
+		display: block;
+		list-style-type: disc;
+		color: skyblue;
+		padding: 5px;
+	}
+	#card{
+   	grid-template-columns: repeat(1, 1fr);
+   }
+   .icons i{
+	font-size: 25px;
+	color: yellow;
+}
+.icons h5{
+	display: none;
+}
+   .card img{
+   	margin-left: 30%;
+   }
+   .carousel-item img{
+	height: 30vh;
+}
+}
+
+
+@media screen and (max-width:700px) and (min-width:450px){
+   #card{
+   	grid-template-columns: repeat(2, 1fr);
+   }
+   .card img{
+   	margin-left: 30px;
+   }
+   header{
+   	height: 32vh;
+   }
+}
